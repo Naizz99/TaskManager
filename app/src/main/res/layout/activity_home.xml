@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/btnProgressReport"
+        android:layout_width="295dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#BD6123"
+        android:fontFamily="casual"
+        android:foregroundTint="#2D3670"
+        android:text="Progress Report"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="viewProgressReport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTaskList" />
+
+    <Button
+        android:id="@+id/btnToDo"
+        android:layout_width="295dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:foregroundTint="#2D3670"
+        android:text="To Do"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="viewToDo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddTask" />
+
+    <Button
+        android:id="@+id/btnTaskList"
+        android:layout_width="295dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#B12657"
+        android:fontFamily="casual"
+        android:foregroundTint="#2D3670"
+        android:text="Task List"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="viewTaskList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToDo" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="411dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="1dp"
+        android:background="#1A8CFF"
+        android:backgroundTint="#1A8CFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:drawableLeft="@drawable/home"
+        android:text=""
+        android:onClick="home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="232dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="casual"
+        android:text="Task Manager"
+        android:textColor="#FFC107"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="295dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="#009688"
+        android:fontFamily="casual"
+        android:foregroundTint="#29A8B8"
+        android:text="Add Task"
+        android:onClick="viewAddTask"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="95dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProgressReport" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="95dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProgressReport" />
+
+    <TextView
+        android:id="@+id/txtCompleted"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="casual"
+        android:text="Completed : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar3"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <TextView
+        android:id="@+id/txtToDo"
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="casual"
+        android:text="To Do : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <TextView
+        android:id="@+id/txtTaskCount"
+        android:layout_width="61dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="108dp"
+        android:text="25"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProgressReport"
+        app:layout_constraintVertical_bias="0.386" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
